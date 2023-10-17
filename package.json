@@ -1,0 +1,41 @@
+{
+  "name": "@infinitywallet/infinity-connector",
+  "description": "Infinity Wallet connection SDK for DApp web3 connect integration",
+  "version": "1.0.5",
+  "homepage": "https://infinitywallet.io",
+  "author": "Infinity Wallet",
+  "keywords": [
+    "infinity wallet",
+    "infinity connect",
+    "infinity",
+    "web3",
+    "web3 connect",
+    "wallet connect",
+    "wallet provider",
+    "ethereum",
+    "bnbchain",
+    "polygon",
+    "harmony"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InfinityWallet/infinity-connector"
+  },
+  "type": "commonjs",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist && rm -rf test/test-app/src/infinity",
+    "build": "tsc",
+    "build-test": "tsc && cp -a dist/* test/test-app/src/infinity",
+    "start": "tsc --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "12"
+  }
+}

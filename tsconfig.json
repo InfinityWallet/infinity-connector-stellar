@@ -1,0 +1,12 @@
+{
+  "include": ["./src","./node_modules"],
+  "exclude":["./dist"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "es5",
+    "lib": ["es2022", "dom","es5"],
+    "module": "CommonJS",
+    "declaration": true,
+    "moduleResolution": "Node"
+  }
+}
